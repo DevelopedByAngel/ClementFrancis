@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+body {
+  background-color:rgb(31, 37, 97);
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+  height: fit-content;
+  overflow-x: hidden;
+}
+.btn-self
+{
+    margin: 0;
+    background-color: linen;
+    border-radius: 5rem;
+    padding: 0.5rem 0.7rem;
+}
+.navbar .logo {
+  height: 3rem;
+}
+.navbar .dropdown-menu {
+  width: 7rem;
+  min-width: 2rem;
+}
+.navbar .dropdown .dropdown-item {
+  display: flex;
+  justify-content: center;
+}
+.navbar .dropdown .fa {
+  font-size: 1.5rem;
+}
+.home
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.home .description {
+    font-size: 1rem;
+  }
+  
+.home .svg-cover
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    left: 0;
+}
+.home svg
+{
+    width: 100%;
+    height: 150vh;
+    filter: blur(20px);
+    animation: background-rotate 25s linear 0s infinite;
+}
+@keyframes background-rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotateZ(180deg);}
+}
+.home .illustration-cover
+{
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.home .illustration {
+  width: 10rem;
+  animation: shift-illustration 4s cubic-bezier(0.83, 0.31, 0.58, 1) 0s infinite;
+  position: relative;
+}
+.home .illustration.illustration1
+{
+    animation-delay: 2s;
+}
+@keyframes shift-illustration {
+    from{bottom:0rem}
+    50%{bottom:2rem}
+    to{bottom: 0rem;}
+}
+
+.home .list-hidden {
+  height: 1rem;
+  display: inline-block;
+  overflow-y: hidden;
+}
+.home .list-text {
+  list-style: none;
+  animation: rotate-text-list 8s cubic-bezier(0.92, 1.68, 0.72, 0.83) 0s infinite;
+  margin: 0;
+  position: relative;
+}
+@keyframes rotate-text-list {
+  from {
+    bottom: 0rem;
+  }
+  20% {
+    bottom:1.2rem;
+  }
+  25%
+  {
+    bottom:1.2rem;
+  }
+  48% {
+    bottom: 2.4rem;
+  }
+  52%
+  {
+    bottom: 2.4rem;
+  }
+  70%
+  {
+    bottom: 1.2rem;
+  }
+  75%
+  {
+    bottom:1.2rem;
+  }
+  95%
+  {
+    bottom: 0rem;
+  }
+  100%
+  {
+    bottom: 0rem;
+  }
+}
+.about
+{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.about .profile
+{
+    width: 50vw;
+    position: absolute;
+    bottom: 0;
+    border: 1px;
+    border-radius: 50%;
+    left: 0;
+}
+.about .slide-in
+{
+    transform: translateX(-30vw);
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+.about .image-bg
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 50vw;
+    height: 600px;
+    position: absolute;
+    clip-path: url(#svgPath);
+    background-image: linear-gradient(to left,red,black);
+}
+.about .cover
+{
+    width: 100%;
+    height: 100vh;
+}
