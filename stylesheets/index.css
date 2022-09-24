@@ -322,28 +322,26 @@ main {
 }
 .skills img{
   width: 15vw;
-  clip-path: polygon(25% 0% ,75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% );
+  /* clip-path: polygon(25% 0% ,75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50% ); */
   height: 15vw; 
 }
 .skills .skill-name
 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.3rem;
   font-weight: bolder;
 }
-.skills .skill-desc
+.pc
 {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  padding: 0rem 2rem;
-  letter-spacing: 0.1rem;
+  list-style-image: url(../images/star.png);
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
-
-
-
+.pc .plus
+{
+  color: var(--secondary);
+}
 
 .projects{
   padding-top: 2rem;
