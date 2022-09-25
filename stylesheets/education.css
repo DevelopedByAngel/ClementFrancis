@@ -1,73 +1,77 @@
-
-
 main {
-    min-width: 30vw;
-    max-width: 80vw;
-    margin: auto;
-  }
-  
-  .timeline .event,
-  .timeline div {
-    font-size: 1em;
-    line-height: 1.75rem;
-    border-top: 3px solid;
-    -o-border-image: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
-    border-image: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
-    border-image-slice: 1;
-    border-width: 3px;
-    margin: 0 1rem;
-    padding: 40px;
-    position: relative;
-    /* color: #34435E; */
-    text-align: justify;
-  }
-  .timeline .event .event-name {
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
-  .timeline .event .event-date {
-    margin-left: 1rem;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.7);
-    letter-spacing: 0.05rem;
-  }
-  .timeline .event .event-desc {
-    display: block;
-  }
-  .timeline div:nth-child(odd) {
-    border-right: 3px solid;
-    padding-left: 0;
-  }
-  .timeline div:nth-child(odd):before {
-    left: 100%;
-    margin-left: -20px;
-  }
-  
-  .timeline div:nth-child(even) {
-    border-left: 3px solid;
-    padding-right: 0;
-  }
-  .timeline div:nth-child(even):before {
-    right: 100%;
-    margin-right: -20px;
-  }
-  .timeline div:first-child {
-    border-top: 0;
-    font-size: 2rem;
-    align-self: flex-end;
-    font-weight: bolder;
-    border-bottom: 3px solid;
-    width: 50%;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .timeline div:nth-child(2) {
-    border-top: 0;
-  }
-  .timeline div:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  
+  min-width: 30vw;
+  max-width: 80vw;
+  margin: auto;
+}
+
+.timeline .event,
+.timeline div {
+  font-size: 1em;
+  line-height: 1.75rem;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(
+    to right,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0 1rem;
+  padding: 40px;
+  position: relative;
+  /* color: #34435E; */
+  text-align: justify;
+}
+.timeline .event .event-name {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.timeline .event .event-date {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.05rem;
+}
+.timeline .event .event-desc {
+  display: block;
+}
+.timeline div:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.timeline div:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
+}
+
+.timeline div:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+.timeline div:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
+}
+.timeline div:first-child {
+  width: 50%;
+  border-top: 0;
+  font-size: 2rem;
+  align-self: flex-end;
+  font-weight: bolder;
+  border-bottom: 3px solid;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.timeline div:nth-child(2) {
+  border-top: 0;
+}
+.timeline div:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

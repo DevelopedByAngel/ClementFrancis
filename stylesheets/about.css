@@ -1,61 +1,58 @@
-
 .about {
-    width: 100vw;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .about .cover
-  {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .about .profile {
-    width: 30vw;
-    bottom: 0;
-    border: 1px;
-    left: 0;
-    margin-right: 15vw;
-  }
-  .about .about-content {
-    width: 50vw;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-  
-  }
-  .about .slide-in {
-    transform: translateX(30vw);
-    opacity: 0;
-    transition: all linear 0.5s;
-  }
-  .about .image-bg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: all linear 5s;
-    width: 50vw;
-    height: 600px;
-    /* position: absolute; */
-    clip-path: url(#svgPath);
-    background-image: linear-gradient(
-      to top,
-      transparent,
-      transparent,
-      var(--primary),
-      var(--primary),
-      var(--primary),
-      transparent
-    );
-  }
-  .about .cover {
-    width: 100%;
-    height: 100vh;
-  }
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.about .cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.about .profile {
+  width: 30vw;
+  bottom: 0;
+  left: 0;
+  border: 1px;
+  margin-right: 15vw;
+}
+.about .about-content {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.about .slide-in {
+  opacity: 0;
+  transform: translateX(30vw);
+  transition: all linear 0.5s;
+}
+.about .image-bg {
+  width: 50vw;
+  height: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all linear 5s;
+  /* position: absolute; */
+  clip-path: url(#svgPath);
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    transparent,
+    var(--primary),
+    var(--primary),
+    var(--primary),
+    transparent
+  );
+}
+.about .cover {
+  width: 100%;
+  height: 100vh;
+}

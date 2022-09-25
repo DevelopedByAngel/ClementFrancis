@@ -1,105 +1,105 @@
 .home {
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.home .description {
+  font-size: 1rem;
+}
+
+.home .svg-cover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.home svg {
+  width: 100%;
+  height: 150vh;
+  opacity: 0.8;
+  filter: blur(20px);
+  animation: background-rotate 25s linear 0s infinite;
+}
+@keyframes background-rotate {
+  from {
+    transform: rotate(0deg);
   }
-  .home .description {
-    font-size: 1rem;
+  to {
+    transform: rotateZ(180deg);
   }
-  
-  .home .svg-cover {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    overflow: hidden;
-    left: 0;
+}
+.home .illustration-cover {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 10%;
+  z-index: -1;
+}
+.home .illustration {
+  width: 15vw;
+  position: relative;
+  filter: drop-shadow(2px 2px 10px rgba(255, 255, 255, 0.5));
+  animation: shift-illustration 4s cubic-bezier(0.83, 0.31, 0.58, 1) 0s infinite;
+}
+.home .illustration.illustration1 {
+  animation-delay: 2s;
+}
+@keyframes shift-illustration {
+  from {
+    bottom: 0rem;
   }
-  .home svg {
-    width: 100%;
-    height: 150vh;
-    filter: blur(20px);
-    opacity: 0.8;
-    animation: background-rotate 25s linear 0s infinite;
+  50% {
+    bottom: 2rem;
   }
-  @keyframes background-rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotateZ(180deg);
-    }
+  to {
+    bottom: 0rem;
   }
-  .home .illustration-cover {
-    width: 80%;
-    margin: 0 10%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
+}
+
+.home .list-hidden {
+  height: 1rem;
+  display: inline-block;
+  overflow-y: hidden;
+}
+.home .list-text {
+  list-style: none;
+  animation: rotate-text-list 8s cubic-bezier(0.92, 1.68, 0.72, 0.83) 0s
+    infinite;
+  margin: 0;
+  position: relative;
+}
+@keyframes rotate-text-list {
+  from {
+    bottom: 0rem;
   }
-  .home .illustration {
-    width: 15vw;
-    filter: drop-shadow(2px 2px 10px rgba(255,255,255,0.5));
-    animation: shift-illustration 4s cubic-bezier(0.83, 0.31, 0.58, 1) 0s infinite;
-    position: relative;
+  20% {
+    bottom: 1.2rem;
   }
-  .home .illustration.illustration1 {
-    animation-delay: 2s;
+  25% {
+    bottom: 1.2rem;
   }
-  @keyframes shift-illustration {
-    from {
-      bottom: 0rem;
-    }
-    50% {
-      bottom: 2rem;
-    }
-    to {
-      bottom: 0rem;
-    }
+  48% {
+    bottom: 2.4rem;
   }
-  
-  .home .list-hidden {
-    height: 1rem;
-    display: inline-block;
-    overflow-y: hidden;
+  52% {
+    bottom: 2.4rem;
   }
-  .home .list-text {
-    list-style: none;
-    animation: rotate-text-list 8s cubic-bezier(0.92, 1.68, 0.72, 0.83) 0s
-      infinite;
-    margin: 0;
-    position: relative;
+  70% {
+    bottom: 1.2rem;
   }
-  @keyframes rotate-text-list {
-    from {
-      bottom: 0rem;
-    }
-    20% {
-      bottom: 1.2rem;
-    }
-    25% {
-      bottom: 1.2rem;
-    }
-    48% {
-      bottom: 2.4rem;
-    }
-    52% {
-      bottom: 2.4rem;
-    }
-    70% {
-      bottom: 1.2rem;
-    }
-    75% {
-      bottom: 1.2rem;
-    }
-    95% {
-      bottom: 0rem;
-    }
-    100% {
-      bottom: 0rem;
-    }
+  75% {
+    bottom: 1.2rem;
   }
+  95% {
+    bottom: 0rem;
+  }
+  100% {
+    bottom: 0rem;
+  }
+}

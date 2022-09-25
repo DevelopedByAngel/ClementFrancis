@@ -1,64 +1,59 @@
-
-.projects{
-    padding-top: 2rem;
-    min-height: 100vh;
+.projects {
+  min-height: 100vh;
   background-color: var(--dark2);
-  background-size: 20px 20px;
-  }
-  .projects .heading
-  {
-    margin: 2rem 0;
-  }
-  .projects .cards-cover
-  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  .projects .card
-  {
-    background-color: var(--white);
-   color: var(--dark);
-   box-shadow: inset 0px 0px 10px 0px var(--dark), 0px 0px 10px 0px white;
-   border: 0.5px solid white;
-   max-width: 30vw;
-   height: 65vh;
-   overflow-y: scroll;
-   margin: 1rem;
-  }
-  .projects .card::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  .projects .card::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border: 1px solid var(--white);
-    border-radius: 0.5rem;
-  }
-  .projects .card::-webkit-scrollbar-thumb:hover {
-    background: var(--dark);
-  }
-  .projects .card .card-title
-  {
-    padding: 0.5rem;
-    -o-border-image: linear-gradient(to right, var(--primary) 0%,transparent 100%);
-       border-image: linear-gradient(to right, var(--primary) 0%,transparent 100%);
-    border-image-slice: 1;
-    border-bottom:3px solid;
-    font-size: 1.3rem;
-    text-align: left;
-  }
-  .projects .card .card-body
-  {
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-    /* letter-spacing: 0.1rem; */
-    word-spacing: 0.5rem;
-    text-align: justify;
-  }
-  .projects .card .card-text .text-muted
-  {
-   letter-spacing: initial;
-  }
-  
+  padding-top: 2rem;
+}
+.projects .heading {
+  margin: 2rem 0;
+}
+.projects .cards-cover {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.projects .card {
+  max-width: 30vw;
+  height: 65vh;
+  background-color: var(--white);
+  color: var(--dark);
+  border: 0.5px solid white;
+  overflow-y: scroll;
+  margin: 1rem;
+  box-shadow: inset 0px 0px 10px 0px var(--dark), 0px 0px 10px 0px white;
+}
+.projects .card::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.projects .card::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border: 1px solid var(--white);
+  border-radius: 0.5rem;
+}
+.projects .card::-webkit-scrollbar-thumb:hover {
+  background: var(--dark);
+}
+.projects .card .card-title {
+  padding: 0.5rem;
+  -o-border-image: linear-gradient(
+    to right,
+    var(--primary) 0%,
+    transparent 100%
+  );
+  border-image: linear-gradient(to right, var(--primary) 0%, transparent 100%);
+  border-image-slice: 1;
+  border-bottom: 3px solid;
+  font-size: 1.3rem;
+  text-align: left;
+}
+.projects .card .card-body {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  /* letter-spacing: 0.1rem; */
+  word-spacing: 0.5rem;
+  text-align: justify;
+}
+.projects .card .card-text .text-muted {
+  letter-spacing: initial;
+}
