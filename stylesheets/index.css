@@ -173,6 +173,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.about .cover
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .about .profile {
   width: 30vw;
   bottom: 0;
@@ -184,6 +190,11 @@ body {
   width: 50vw;
   font-size: 1.1rem;
   line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
 }
 .about .slide-in {
   transform: translateX(30vw);
@@ -411,11 +422,85 @@ background-size: 20px 20px;
 {
   display: flex;
   padding: 1rem 3rem;
+  margin-top: 2rem;
   justify-content: flex-end;
+  border-top: 1px solid rgba(255,255,255,0.6);
 }
 .footer a
 {
   color: var(--secondary);
   text-decoration: none;
   font-style: italic;
+}
+@media (max-width: 768px)
+{
+  .home .illustration {
+    width: 40vw;
+  }
+  .home .illustration.illustration2
+  {
+    position: absolute;
+    top: -60vh;
+    right: 0; 
+    animation: shift-illustration-small 4s cubic-bezier(0.83, 0.31, 0.58, 1) -2s infinite;
+    position: relative;
+  }
+  @keyframes shift-illustration-small {
+    from {
+      top: -60vh;
+    }
+    50% {
+      top: -57vh;
+    }
+    to {
+      top: -60vh;
+    }
+  }
+  .about {
+    width: 100vw;
+    flex-direction: column;
+  }
+  .about .cover
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .profile {
+    height: 40vh;
+    width: auto;
+    margin-right: 0vw;
+  }
+  .about .about-content {
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    text-align: justify;
+    padding: 0.5rem;
+  
+  }
+  .about .slide-in {
+    transform: translateX(0vw);
+    opacity: 100;
+  }
+  .about .image-bg {
+   display: none;
+  }  
+  .skills .img-box
+  {
+    margin: 0.5rem;
+    height: 35vh;
+    width: 40vw;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  .projects .card
+  {
+    max-width: 80vw;
+    height: 60vh;
+  }
 }
